@@ -8,9 +8,9 @@ import (
 	"github.com/pkg/errors"
 	"go.uber.org/zap"
 
-	"github.com/lonnblad/go-service-doc/core"
-	html_gen "github.com/lonnblad/go-service-doc/html-gen"
-	"github.com/lonnblad/go-service-doc/utils"
+	"github.com/karlssonerik/go-service-doc/core"
+	html_gen "github.com/karlssonerik/go-service-doc/html-gen"
+	"github.com/karlssonerik/go-service-doc/utils"
 )
 
 type SimpleExporter struct {

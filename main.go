@@ -8,9 +8,9 @@ import (
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 
-	"github.com/lonnblad/go-service-doc/exporting/golang"
-	"github.com/lonnblad/go-service-doc/exporting/simple"
-	"github.com/lonnblad/go-service-doc/parser"
+	"github.com/karlssonerik/go-service-doc/exporting/golang"
+	"github.com/karlssonerik/go-service-doc/exporting/simple"
+	"github.com/karlssonerik/go-service-doc/parser"
 )
 
 func init() {

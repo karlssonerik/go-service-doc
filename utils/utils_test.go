@@ -3,7 +3,7 @@ package utils_test
 import (
 	"testing"
 
-	"github.com/lonnblad/go-service-doc/utils"
+	"github.com/karlssonerik/go-service-doc/utils"
 	"github.com/stretchr/testify/assert"
 )
 

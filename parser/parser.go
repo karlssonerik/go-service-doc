@@ -11,9 +11,9 @@ import (
 	"github.com/russross/blackfriday/v2"
 	"go.uber.org/zap"
 
-	"github.com/lonnblad/go-service-doc/core"
-	html_gen "github.com/lonnblad/go-service-doc/html-gen"
-	"github.com/lonnblad/go-service-doc/utils"
+	"github.com/karlssonerik/go-service-doc/core"
+	html_gen "github.com/karlssonerik/go-service-doc/html-gen"
+	"github.com/karlssonerik/go-service-doc/utils"
 )
 
 type Parser struct {
@@ -86,7 +86,7 @@ func (p *Parser) Run() {
 }
 
 func (p *Parser) findMDFiles() {
-	zap.L().Info("search for MD files")
+	zap.L().Info("search for MD filesz")
 
 	files, err := ioutil.ReadDir(p.sourceDir + "/")
 	if err != nil {
