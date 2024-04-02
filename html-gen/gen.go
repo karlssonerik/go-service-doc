@@ -88,8 +88,12 @@ func (g *Gen) Build() (_ []byte, err error) {
 }
 
 func (g *Gen) BuildSearchPageTemplate() (_ []byte, err error) {
-	g.doc = "<search_result>"
-	g.queryString = "<query_string>"
+	g.doc = `<div><h1>Search result for: "{{.QueryString}}"</h1>
+      {{ range .SearchResults }}
+      <div class=search-result-card onclick="location.href='.Link';"><h2>{{ join .Context " > "}}</h2><div class=search-result-content>{{ .HTML }}</div></div>
+      {{ end }}
+    </div>`
+	g.queryString = "{{.QueryString}}"
 
 	return g.Build()
 }
