@@ -98,7 +98,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/blevesearch/bleve"
+	"github.com/blevesearch/bleve/v2"
 )
 
 const contentType = "Content-Type"
